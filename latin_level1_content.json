@@ -1,0 +1,641 @@
+{
+  "document_metadata": {
+    "title": "Latin Level 1 Workbook - Part 1",
+    "source": "St John's Beaumont School Latin Students",
+    "subtitle": "Exercises, Grammar and Vocabulary for Common Entrance Latin Level 1",
+    "motto": "A.M.D.G - Ad Maiorem Dei Gloriam",
+    "page_range": "1-93",
+    "themes_covered": 10
+  },
+  "educational_content": {
+    "thema_1": {
+      "title": "The Verb 'To Be'",
+      "learning_objectives": [
+        "To understand 1st/2nd/3rd person and singular/plural",
+        "To translate first person singular and plural of 'to be' in Latin",
+        "To use personal pronouns ego, nos",
+        "To translate second person singular and plural of 'to be'",
+        "To translate third person singular and plural of 'to be'",
+        "To use personal pronouns tu, vos"
+      ],
+      "key_vocabulary": {
+        "pronouns": {
+          "ego": "I",
+          "nos": "we", 
+          "tu": "you (singular)",
+          "vos": "you (plural)"
+        },
+        "verb_forms": {
+          "sum": "I am",
+          "es": "you are",
+          "est": "he/she/it is",
+          "sumus": "we are",
+          "estis": "you (plural) are",
+          "sunt": "they are"
+        },
+        "nouns": {
+          "puer": "boy",
+          "pueri": "boys",
+          "nauta": "sailor",
+          "nautae": "sailors",
+          "bonus": "good (sing.)",
+          "boni": "good (plural)",
+          "laetus": "happy (sing.)",
+          "laeti": "happy (plural)"
+        }
+      },
+      "grammar_rules": [
+        "The verb 'to be' in Latin is irregular like in English",
+        "The infinitive is the part of the verb without a person",
+        "Verbs have persons: 1st (I/we), 2nd (you), 3rd (he/she/it/they)",
+        "Singular refers to one person, plural to two or more",
+        "Personal pronouns in Latin are used for emphasis",
+        "The verb 'to be' is often accompanied by a complement"
+      ],
+      "example_sentences": [
+        {
+          "latin": "sum puer",
+          "english": "I am a boy"
+        },
+        {
+          "latin": "sumus pueri", 
+          "english": "we are boys"
+        },
+        {
+          "latin": "nauta sum",
+          "english": "I am a sailor"
+        },
+        {
+          "latin": "nautae sumus",
+          "english": "we are sailors"
+        },
+        {
+          "latin": "ego sum puer",
+          "english": "I am a boy (emphatic)"
+        },
+        {
+          "latin": "nos sumus laeti",
+          "english": "we are happy"
+        }
+      ]
+    },
+    "thema_2": {
+      "title": "Intransitive Verbs",
+      "learning_objectives": [
+        "To identify transitive and intransitive verbs in English and Latin",
+        "To translate Latin words in the 1st person singular and plural",
+        "To understand verb stems and thematic vowels",
+        "To form all persons (1st, 2nd, 3rd) in singular and plural",
+        "To use pronouns correctly with verbs"
+      ],
+      "key_vocabulary": {
+        "verbs": {
+          "amo": "I love",
+          "ambulo": "I walk", 
+          "canto": "I sing",
+          "clamo": "I shout",
+          "festino": "I hurry",
+          "habito": "I live/inhabit",
+          "laboro": "I work",
+          "neco": "I kill",
+          "pugno": "I fight",
+          "rogo": "I ask/ask for",
+          "voco": "I call",
+          "aedifico": "I build"
+        },
+        "connecting_words": {
+          "non": "not",
+          "et": "and",
+          "sed": "but",
+          "tamen": "however",
+          "tandem": "at last",
+          "semper": "always",
+          "sic": "thus"
+        }
+      },
+      "grammar_rules": [
+        "Intransitive verbs do not need an object",
+        "Transitive verbs take a direct object",
+        "In Latin, verb endings indicate who is doing the action",
+        "1st person singular: add -o to verb stem",
+        "1st person plural: add -mus to verb stem", 
+        "2nd person singular: add -s to verb stem",
+        "2nd person plural: add -tis to verb stem",
+        "3rd person singular: add -t to verb stem",
+        "3rd person plural: add -nt to verb stem",
+        "The stem for 1st conjugation verbs ends in -a-",
+        "Personal pronouns are optional but add emphasis"
+      ],
+      "verb_conjugation_example": {
+        "verb": "amo (to love)",
+        "forms": {
+          "1st_sing": "amo (I love)",
+          "2nd_sing": "amas (you love)",
+          "3rd_sing": "amat (he/she/it loves)",
+          "1st_plur": "amamus (we love)",
+          "2nd_plur": "amatis (you [pl.] love)",
+          "3rd_plur": "amant (they love)"
+        }
+      }
+    },
+    "thema_3": {
+      "title": "Subjects (Nominative Case)",
+      "learning_objectives": [
+        "To understand the use of the Nominative case",
+        "To learn first declension nominative singular and plural",
+        "To learn second declension nominative singular and plural",
+        "To understand second declension -er nouns"
+      ],
+      "key_vocabulary": {
+        "first_declension": {
+          "agricola": "farmer",
+          "ancilla": "slave-girl",
+          "aqua": "water",
+          "dea": "goddess", 
+          "femina": "woman",
+          "filia": "daughter",
+          "hasta": "spear",
+          "incola": "inhabitant",
+          "insula": "island",
+          "nauta": "sailor",
+          "patria": "country",
+          "poeta": "poet",
+          "regina": "queen",
+          "sagitta": "arrow",
+          "terra": "land",
+          "unda": "wave"
+        },
+        "second_declension": {
+          "amicus": "friend",
+          "cibus": "food",
+          "dominus": "master",
+          "equus": "horse",
+          "filius": "son",
+          "murus": "wall",
+          "servus": "slave"
+        },
+        "second_declension_er": {
+          "puer": "boy",
+          "magister": "teacher"
+        }
+      },
+      "grammar_rules": [
+        "Nouns belong to families called declensions",
+        "There are 5 declensions total",
+        "A noun cannot change which declension it belongs to",
+        "The nominative case is used for the subject of a sentence",
+        "The subject is the noun doing the action",
+        "1st declension nominative singular: -a",
+        "1st declension nominative plural: -ae", 
+        "2nd declension nominative singular: -us",
+        "2nd declension nominative plural: -i",
+        "2nd declension -er nouns: nominative singular -er, plural -i",
+        "Most 1st declension nouns are feminine",
+        "PAIN words are masculine 1st declension: poeta, agricola, incola, nauta",
+        "If subject is plural, verb must be plural",
+        "Latin has no articles (a, an, the)"
+      ],
+      "declension_endings": {
+        "first_declension": {
+          "nominative_singular": "-a",
+          "nominative_plural": "-ae"
+        },
+        "second_declension_masculine": {
+          "nominative_singular": "-us",
+          "nominative_plural": "-i"
+        },
+        "second_declension_er": {
+          "nominative_singular": "-er", 
+          "nominative_plural": "-i"
+        }
+      }
+    },
+    "thema_4": {
+      "title": "Objects (Accusative Case)",
+      "learning_objectives": [
+        "To recognize transitive verbs with objects in English sentences",
+        "To identify uses of the accusative case",
+        "To learn first declension accusative singular and plural",
+        "To learn second declension accusative singular and plural"
+      ],
+      "key_vocabulary": {
+        "note": "Uses same vocabulary as previous themes, but in accusative forms"
+      },
+      "grammar_rules": [
+        "Transitive verbs need an object",
+        "The accusative case is used for direct objects",
+        "The object receives the action of the verb",
+        "In Latin, word order is flexible - case endings show function",
+        "The subject is the word in nominative case, not necessarily first word",
+        "1st declension accusative singular: -am",
+        "1st declension accusative plural: -as",
+        "2nd declension accusative singular: -um", 
+        "2nd declension accusative plural: -os"
+      ],
+      "case_endings": {
+        "first_declension": {
+          "nominative": {
+            "singular": "-a",
+            "plural": "-ae"
+          },
+          "accusative": {
+            "singular": "-am",
+            "plural": "-as"
+          }
+        },
+        "second_declension": {
+          "nominative": {
+            "singular": "-us",
+            "plural": "-i"
+          },
+          "accusative": {
+            "singular": "-um", 
+            "plural": "-os"
+          }
+        }
+      },
+      "example_sentences": [
+        {
+          "latin": "puella deam amat",
+          "english": "the girl loves the goddess"
+        },
+        {
+          "latin": "puellae deas amant",
+          "english": "the girls love the goddesses"
+        },
+        {
+          "latin": "deam amicus amat",
+          "english": "the friend loves the goddess"
+        }
+      ]
+    },
+    "thema_5": {
+      "title": "Genders", 
+      "learning_objectives": [
+        "To identify feminine and masculine 1st declension nouns",
+        "To understand 2nd declension masculine nouns",
+        "To learn about 2nd declension neuter nouns",
+        "To practice using masculine, feminine and neuter nouns"
+      ],
+      "key_vocabulary": {
+        "second_declension_neuter": {
+          "aurum": "gold",
+          "auxilium": "help",
+          "bellum": "war",
+          "oppidum": "town",
+          "periculum": "danger", 
+          "templum": "temple",
+          "verbum": "word"
+        }
+      },
+      "grammar_rules": [
+        "Latin has 3 genders: masculine, feminine, neuter",
+        "Every noun has a gender that never changes",
+        "Most 1st declension nouns are feminine",
+        "PAIN words are masculine exceptions in 1st declension",
+        "All 2nd declension -us nouns learned so far are masculine",
+        "2nd declension neuter nouns end -um in nominative singular",
+        "Gender is not always logical",
+        "When learning nouns, you must learn their gender"
+      ],
+      "neuter_endings": {
+        "second_declension_neuter": {
+          "nominative_singular": "-um",
+          "accusative_singular": "-um",
+          "nominative_plural": "-a",
+          "accusative_plural": "-a"
+        }
+      }
+    },
+    "thema_6": {
+      "title": "Adjectives",
+      "learning_objectives": [
+        "To understand agreement of adjectives in gender, number and case",
+        "To use nominative and accusative cases with nouns of all three genders",
+        "To learn adjectives ending in -er"
+      ],
+      "key_vocabulary": {
+        "adjectives": {
+          "bonus/bona/bonum": "good",
+          "magnus/magna/magnum": "big", 
+          "malus/mala/malum": "wicked/bad",
+          "parvus/parva/parvum": "small",
+          "laetus/laeta/laetum": "happy",
+          "fessus/fessa/fessum": "tired",
+          "multus/multa/multum": "much/many",
+          "novus/nova/novum": "new",
+          "altus/alta/altum": "high/deep",
+          "clarus/clara/clarum": "bright/famous",
+          "saevus/saeva/saevum": "savage",
+          "tutus/tuta/tutum": "safe"
+        },
+        "adjectives_er": {
+          "miser/misera/miserum": "wretched/miserable",
+          "pulcher/pulchra/pulchrum": "beautiful"
+        },
+        "new_verbs": {
+          "do": "I give",
+          "intro": "I enter", 
+          "laudo": "I praise",
+          "porto": "I carry",
+          "sto": "I stand",
+          "supero": "I overcome"
+        },
+        "adverbs": {
+          "hic": "here",
+          "etiam": "also",
+          "mox": "soon",
+          "saepe": "often"
+        }
+      },
+      "grammar_rules": [
+        "Adjectives must agree with nouns in 3 ways: gender, number, case",
+        "Adjectives can decline to be masculine, feminine, or neuter",
+        "Adjectives can be singular or plural", 
+        "Adjectives can take any case",
+        "Some adjectives end -er in masculine nominative singular",
+        "Some -er adjectives keep the -e-, others lose it in the stem",
+        "Dictionary entries show all three genders to indicate the stem"
+      ],
+      "adjective_declension": {
+        "bonus_example": {
+          "masculine_singular": {
+            "nominative": "bonus",
+            "accusative": "bonum"
+          },
+          "feminine_singular": {
+            "nominative": "bona", 
+            "accusative": "bonam"
+          },
+          "neuter_singular": {
+            "nominative": "bonum",
+            "accusative": "bonum" 
+          },
+          "masculine_plural": {
+            "nominative": "boni",
+            "accusative": "bonos"
+          },
+          "feminine_plural": {
+            "nominative": "bonae",
+            "accusative": "bonas"
+          },
+          "neuter_plural": {
+            "nominative": "bona",
+            "accusative": "bona"
+          }
+        }
+      }
+    },
+    "thema_7": {
+      "title": "Nouns - The Genitive Case",
+      "learning_objectives": [
+        "To understand possession in English using 'of' and possessive apostrophes",
+        "To use the genitive case in Latin",
+        "To learn first declension genitive singular and plural", 
+        "To learn second declension genitive singular and plural",
+        "To understand the importance of genitive when learning vocabulary",
+        "To use adjectives in the genitive case"
+      ],
+      "key_vocabulary": {
+        "note": "Uses previous vocabulary but focuses on genitive case forms"
+      },
+      "grammar_rules": [
+        "The genitive case indicates possession ('of' or 's in English)",
+        "The person who owns something goes in genitive case",
+        "NOT the thing being owned",
+        "1st declension genitive singular: -ae",
+        "1st declension genitive plural: -arum",
+        "2nd declension genitive singular: -i", 
+        "2nd declension genitive plural: -orum",
+        "Genitive singular ending tells you the declension and stem",
+        "1st declension: genitive ends -ae", 
+        "2nd declension: genitive ends -i",
+        "Remove genitive ending to find the stem",
+        "When learning nouns, learn: nominative, genitive, gender, meaning"
+      ],
+      "genitive_endings": {
+        "first_declension": {
+          "genitive_singular": "-ae",
+          "genitive_plural": "-arum"
+        },
+        "second_declension": {
+          "genitive_singular": "-i",
+          "genitive_plural": "-orum" 
+        }
+      },
+      "example_sentences": [
+        {
+          "latin": "agricolae hasta",
+          "english": "the farmer's spear / the spear of the farmer"
+        },
+        {
+          "latin": "puellae aqua", 
+          "english": "the girl's water / the water of the girl"
+        }
+      ]
+    },
+    "thema_8": {
+      "title": "First and Second Conjugations",
+      "learning_objectives": [
+        "To identify 1st conjugation infinitives",
+        "To understand the thematic vowel of 1st conjugation verbs",
+        "To form 1st conjugation imperatives",
+        "To identify 2nd conjugation infinitives", 
+        "To understand the thematic vowel of 2nd conjugation verbs",
+        "To form 2nd conjugation imperatives"
+      ],
+      "key_vocabulary": {
+        "second_conjugation_verbs": {
+          "deleo/delere": "to destroy",
+          "teneo/tenere": "to hold",
+          "habeo/habere": "to have", 
+          "terreo/terrere": "to frighten",
+          "timeo/timere": "to fear",
+          "moneo/monere": "to warn",
+          "video/videre": "to see",
+          "moveo/movere": "to move",
+          "respondeo/respondere": "to reply",
+          "rideo/ridere": "to laugh"
+        }
+      },
+      "grammar_rules": [
+        "Verbs belong to families called conjugations",
+        "There are 5 conjugations total",
+        "The infinitive is the basic form of a verb",
+        "1st conjugation infinitives end -are",
+        "1st conjugation thematic vowel is -a-",
+        "2nd conjugation infinitives end -ere", 
+        "2nd conjugation thematic vowel is -e-",
+        "Same person endings for both conjugations: -o, -s, -t, -mus, -tis, -nt",
+        "1st conjugation singular imperative: stem only",
+        "1st conjugation plural imperative: stem + -te",
+        "2nd conjugation imperatives follow same pattern",
+        "Thematic vowel appears before -re in infinitive"
+      ],
+      "conjugation_comparison": {
+        "first_conjugation": {
+          "infinitive_ending": "-are",
+          "thematic_vowel": "-a-",
+          "example": "amo/amare (to love)"
+        },
+        "second_conjugation": {
+          "infinitive_ending": "-ere",
+          "thematic_vowel": "-e-", 
+          "example": "moneo/monere (to warn)"
+        }
+      }
+    },
+    "thema_9": {
+      "title": "Nouns - The Dative Case",
+      "learning_objectives": [
+        "To understand 'to' in English",
+        "To distinguish direct objects from indirect objects",
+        "To learn 1st declension dative singular and plural",
+        "To learn 2nd declension dative singular and plural"
+      ],
+      "key_vocabulary": {
+        "new_verbs": {
+          "do/dare": "I give",
+          "paro/parare": "I prepare"
+        },
+        "new_nouns": {
+          "auxilium": "help",
+          "pecunia": "money", 
+          "vinum": "wine"
+        }
+      },
+      "grammar_rules": [
+        "The dative case is used for indirect objects",
+        "Can be translated as 'to...' or 'for...'",
+        "Direct objects receive action directly (accusative case)",
+        "Indirect objects receive action indirectly (dative case)",
+        "1st declension dative singular: -ae (same as genitive singular)",
+        "1st declension dative plural: -is",
+        "2nd declension dative singular: -o",
+        "2nd declension dative plural: -is (same as 1st declension)",
+        "Context helps determine if -ae is nominative plural, genitive singular, or dative singular"
+      ],
+      "dative_endings": {
+        "first_declension": {
+          "dative_singular": "-ae",
+          "dative_plural": "-is"
+        },
+        "second_declension": {
+          "dative_singular": "-o", 
+          "dative_plural": "-is"
+        }
+      },
+      "example_sentences": [
+        {
+          "latin": "dominus pecuniam servis dat",
+          "english": "the master gives money to the slaves"
+        },
+        {
+          "latin": "servi cibum domino parant",
+          "english": "the slaves prepare food for the master"
+        }
+      ]
+    },
+    "thema_10": {
+      "title": "Nouns - The Ablative Case",
+      "learning_objectives": [
+        "To understand uses of the ablative case",
+        "To learn 1st declension ablative singular and plural",
+        "To learn 2nd declension ablative singular and plural"
+      ],
+      "key_vocabulary": {
+        "note": "Uses vocabulary from previous themes"
+      },
+      "grammar_rules": [
+        "The ablative case can be translated as 'by', 'with', or 'from'",
+        "Used for means, manner, and separation",
+        "Examples: 'by means of sword', 'with sword', 'from fear'",
+        "1st declension ablative singular: -a",
+        "1st declension ablative plural: -is (same as dative)", 
+        "2nd declension ablative singular: -o (same as dative)",
+        "2nd declension ablative plural: -is (same as dative)"
+      ],
+      "ablative_endings": {
+        "first_declension": {
+          "ablative_singular": "-a",
+          "ablative_plural": "-is"
+        },
+        "second_declension": {
+          "ablative_singular": "-o",
+          "ablative_plural": "-is"
+        }
+      }
+    }
+  },
+  "case_summary": {
+    "first_declension": {
+      "nominative": {
+        "singular": "-a",
+        "plural": "-ae"
+      },
+      "accusative": {
+        "singular": "-am", 
+        "plural": "-as"
+      },
+      "genitive": {
+        "singular": "-ae",
+        "plural": "-arum"
+      },
+      "dative": {
+        "singular": "-ae",
+        "plural": "-is" 
+      },
+      "ablative": {
+        "singular": "-a",
+        "plural": "-is"
+      }
+    },
+    "second_declension_masculine": {
+      "nominative": {
+        "singular": "-us",
+        "plural": "-i"
+      },
+      "accusative": {
+        "singular": "-um",
+        "plural": "-os"
+      },
+      "genitive": {
+        "singular": "-i", 
+        "plural": "-orum"
+      },
+      "dative": {
+        "singular": "-o",
+        "plural": "-is"
+      },
+      "ablative": {
+        "singular": "-o",
+        "plural": "-is"
+      }
+    },
+    "second_declension_neuter": {
+      "nominative": {
+        "singular": "-um",
+        "plural": "-a"
+      },
+      "accusative": {
+        "singular": "-um",
+        "plural": "-a" 
+      },
+      "genitive": {
+        "singular": "-i",
+        "plural": "-orum"
+      },
+      "dative": {
+        "singular": "-o",
+        "plural": "-is"
+      },
+      "ablative": {
+        "singular": "-o", 
+        "plural": "-is"
+      }
+    }
+  },
+  "practice_exercises": {
+    "note": "Each theme includes multiple exercises with translation practice, grammar drills, and vocabulary building activities. Exercises progress from basic recognition to sentence composition."
+  }
+}
