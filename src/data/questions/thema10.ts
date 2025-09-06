@@ -34,7 +34,7 @@ export const thema10Questions: Question[] = [
     question: "What is the ablative singular ending for 1st declension nouns like 'puella'?",
     options: ["-a", "-am", "-ae", "-is"],
     correctAnswer: 0,
-    explanation: "First declension ablative singular ends in -a. So 'puella' in ablative is 'puella' (same as nominative, but different meaning)."
+    explanation: "First declension ablative singular ends in -a. So 'puella' in ablative looks the same as nominative, but its function in the sentence shows it's ablative (answers 'how?', 'where?', 'when?')."
   },
   {
     id: "10-6",

@@ -39,7 +39,7 @@ export const thema7Questions: Question[] = [
   {
     id: "7-6",
     question: "Which sentence is in future tense?",
-    options: ["Marcus librum legit", "Marcus librum leget", "Marcus librum legerat", "Marcus librum legerat"],
+    options: ["Marcus librum legit", "Marcus librum leget", "Marcus librum legebat", "Marcus librum legerat"],
     correctAnswer: 1,
     explanation: "'Marcus librum leget' means 'Marcus will read the book'. The -et ending (from lego) shows future tense."
   },

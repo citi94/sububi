@@ -110,3 +110,28 @@ Game state persists using localStorage with these keys:
 - `latin_app_stats` - Player statistics and achievements
 
 Clear browser storage to reset game progress during development.
+
+## Deployment
+
+### GitHub Repository
+- **Repository**: https://github.com/citi94/sububi
+- **Owner**: citi94
+- **Branch**: main (auto-deploys to production)
+
+### Netlify Deployment
+- Connect repository to Netlify for automatic deployments
+- **Build command**: `npm run build`
+- **Publish directory**: `dist`
+- **Framework preset**: Vite (auto-detected)
+
+### Development Workflow
+1. Make changes locally
+2. Test with `npm run dev`
+3. Commit and push to main branch
+4. Netlify automatically builds and deploys
+
+### Project Status
+- **Content**: Complete - All 20 Themas with 135+ questions
+- **Game Mechanics**: Fully implemented with scoring, achievements, progress tracking
+- **UI/UX**: Kid-friendly design with animations and celebrations
+- **Deployment**: Ready for production via Netlify

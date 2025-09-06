@@ -10,10 +10,10 @@ export const thema1Questions: Question[] = [
   },
   {
     id: "1-2", 
-    question: "Which is the correct 1st person singular form of 'video' (to see)?",
+    question: "Which is the correct 2nd person singular form of 'video' (I see)?",
     options: ["vides", "video", "videt", "videmus"],
-    correctAnswer: 1,
-    explanation: "The 1st person singular present tense of 'video' is 'video', meaning 'I see'. The -o ending shows it's 'I' doing the action."
+    correctAnswer: 0,
+    explanation: "The 2nd person singular present tense of 'video' is 'vides', meaning 'you see'. The -s ending shows it's 'you' doing the action."
   },
   {
     id: "1-3",

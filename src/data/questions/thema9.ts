@@ -39,7 +39,7 @@ export const thema9Questions: Question[] = [
   {
     id: "9-6",
     question: "Which sentence shows possession?",
-    options: ["Puella cantat", "Puella pueri librum legit", "Puer puellae epistulam scribit", "Liber puellae magnus est"],
+    options: ["Puella cantat", "Puella librum legit", "Puer puellae epistulam scribit", "Liber puellae magnus est"],
     correctAnswer: 3,
     explanation: "'Liber puellae magnus est' (The girl's book is big) shows possession. 'Puellae' is genitive, showing whose book it is."
   },
