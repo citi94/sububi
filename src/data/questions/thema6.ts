@@ -1,60 +1,146 @@
 import { Question } from '../../types/latin'
 
-export const thema6Questions: Question[] = [
+// Test A: Introduction - Basic adjective recognition (67% threshold)
+const testA: Question[] = [
   {
-    id: "6-1",
-    question: "What does 'dum' mean in Latin?",
-    options: ["if", "while", "after", "because"],
-    correctAnswer: 1,
-    explanation: "'Dum' means 'while'. It shows that two things are happening at the same time. 'Dum legit' means 'while he reads'."
-  },
-  {
-    id: "6-2",
-    question: "In 'Si pluit, domi manebo' (If it rains, I will stay at home), what does 'si' mean?",
-    options: ["while", "if", "when", "because"],
-    correctAnswer: 1,
-    explanation: "'Si' means 'if'. It introduces a condition - something that might happen. This sentence means 'IF it rains, I will stay home'."
-  },
-  {
-    id: "6-3",
-    question: "What does 'postquam' mean?",
-    options: ["before", "while", "if", "after"],
-    correctAnswer: 3,
-    explanation: "'Postquam' means 'after'. Think of 'post' (after) + 'quam' (than). 'Postquam venit' means 'after he came'."
-  },
-  {
-    id: "6-4",
-    question: "Which word introduces a condition (something that might happen)?",
-    options: ["dum", "si", "postquam", "quod"],
-    correctAnswer: 1,
-    explanation: "'Si' introduces conditions. It starts sentences like 'If you study, you will learn' or 'If it's sunny, we'll play outside'."
-  },
-  {
-    id: "6-5",
-    question: "In 'Dum Marcus laborat, Lucius ludit' what is happening?",
-    options: ["First Marcus works, then Lucius plays", "Marcus and Lucius are both working", "Marcus works while Lucius plays at the same time", "Marcus plays after Lucius works"],
+    id: "6A-1",
+    question: "What does the Latin adjective 'magnus' mean?",
+    options: ["small", "bad", "big/great", "good"],
     correctAnswer: 2,
-    explanation: "'Dum' means 'while', so Marcus works and Lucius plays at the same time. They're doing different things simultaneously."
+    explanation: "'Magnus' means 'big' or 'great'! Like a magnificent castle or a great leader - something large and important."
   },
   {
-    id: "6-6",
-    question: "What type of sentence is 'Postquam cenavit, dormivit' (After he dined, he slept)?",
-    options: ["A question", "A time sequence", "A condition", "A command"],
+    id: "6A-2", 
+    question: "In 'puella bona' (good girl), which word is the adjective?",
+    options: ["puella", "bona", "both words", "neither word"],
     correctAnswer: 1,
-    explanation: "This shows a time sequence. 'Postquam' (after) shows that first he ate dinner, then he went to sleep - one thing after another."
+    explanation: "'Bona' is the adjective! Adjectives describe nouns. 'Bona' describes what kind of girl - a good girl."
   },
   {
-    id: "6-7",
-    question: "Which sentence means 'If you come, I will be happy'?",
-    options: ["Dum venis, laetus ero", "Si venis, laetus ero", "Postquam venis, laetus ero", "Quod venis, laetus ero"],
+    id: "6A-3",
+    question: "What does 'parvus' mean?",
+    options: ["big", "small", "good", "bad"],
     correctAnswer: 1,
-    explanation: "'Si venis, laetus ero' means 'If you come, I will be happy'. 'Si' introduces the condition (if you come)."
+    explanation: "'Parvus' means 'small'! Think of a tiny puppy or a little coin - something not big."
   },
   {
-    id: "6-8",
-    question: "What's the difference between 'dum' and 'postquam'?",
-    options: ["No difference", "'Dum' means during the same time, 'postquam' means after", "'Dum' means if, 'postquam' means while", "'Dum' means after, 'postquam' means before"],
+    id: "6A-4",
+    question: "Which word describes 'templum' in 'templum magnum' (big temple)?",
+    options: ["templum", "magnum", "both equally", "it's unclear"],
     correctAnswer: 1,
-    explanation: "'Dum' means things happen at the same time (while), but 'postquam' means one thing happens after another (after)."
+    explanation: "'Magnum' describes the temple! It tells us what kind of temple - a big temple, not a small one."
+  },
+  {
+    id: "6A-5",
+    question: "What does the adjective 'bonus' mean?",
+    options: ["big", "small", "good", "old"],
+    correctAnswer: 2,
+    explanation: "'Bonus' means 'good'! Like a bonus point in games - something positive and nice."
+  },
+  {
+    id: "6A-6",
+    question: "In Latin, adjectives are words that do what?",
+    options: ["name things", "describe things", "show actions", "connect ideas"],
+    correctAnswer: 1,
+    explanation: "Adjectives describe things! They tell us what nouns are like - big, small, good, bad, pretty, ugly."
   }
+]
+
+// Test B: Reinforcement - Agreement rules and application (75% threshold)
+const testB: Question[] = [
+  {
+    id: "6B-1",
+    question: "Why does 'puella bona' use 'bona' instead of 'bonus'?",
+    options: ["Bonus is the wrong word", "Adjectives must match their noun's gender", "Girls are always bona", "It sounds better"],
+    correctAnswer: 1,
+    explanation: "Adjectives must match their noun's gender! 'Puella' is feminine, so we use the feminine form 'bona' to match."
+  },
+  {
+    id: "6B-2",
+    question: "Which form of 'magnus' goes with 'templum' (neuter)?",
+    options: ["magnus", "magna", "magnum", "any form works"],
+    correctAnswer: 2,
+    explanation: "'Magnum' matches 'templum'! Both are neuter. In Latin, adjectives change their endings to match their nouns."
+  },
+  {
+    id: "6B-3",
+    question: "For 'puer bonus' (good boy), why do we use 'bonus' not 'bona'?",
+    options: ["Boys are always bonus", "Puer is masculine, so bonus matches", "Bona is for girls only", "It's just tradition"],
+    correctAnswer: 1,
+    explanation: "'Puer' is masculine, so 'bonus' matches! Masculine nouns take masculine adjective forms."
+  },
+  {
+    id: "6B-4",
+    question: "What's wrong with 'puella magnus'?",
+    options: ["Nothing wrong", "Magnus is the wrong meaning", "Magnus is masculine but puella is feminine", "Should be magnum"],
+    correctAnswer: 2,
+    explanation: "The genders don't match! 'Puella' is feminine but 'magnus' is masculine. We need 'puella magna' instead."
+  },
+  {
+    id: "6B-5", 
+    question: "Which adjective form matches 'aqua' (water, feminine)?",
+    options: ["parvus", "parvum", "parva", "parvos"],
+    correctAnswer: 2,
+    explanation: "'Parva' matches 'aqua'! Both are feminine. We'd say 'aqua parva' (small water/little water)."
+  },
+  {
+    id: "6B-6",
+    question: "In Latin, what must adjectives do with their nouns?",
+    options: ["Come before them", "Come after them", "Match their gender", "Be the same length"],
+    correctAnswer: 2,
+    explanation: "Adjectives must match their noun's gender! It's like a matching game - feminine nouns need feminine adjectives."
+  }
+]
+
+// Test C: Mastery - Complex agreement and flexible word order (83% threshold)
+const testC: Question[] = [
+  {
+    id: "6C-1",
+    question: "Both 'magna puella' and 'puella magna' mean 'big girl'. What does this show?",
+    options: ["One is wrong", "Word order is flexible in Latin", "They mean different things", "It's a mistake"],
+    correctAnswer: 1,
+    explanation: "Word order is flexible in Latin! Adjectives can come before or after their nouns. Both 'magna puella' and 'puella magna' are correct."
+  },
+  {
+    id: "6C-2",
+    question: "What makes 'liber magnus' (big book) correct?",
+    options: ["Liber and magnus are both masculine", "Books are always big", "Magnus always describes liber", "It's just memorized"],
+    correctAnswer: 0,
+    explanation: "'Liber' (book) is masculine and 'magnus' is the masculine form - they match! That's what makes Latin grammar work."
+  },
+  {
+    id: "6C-3",
+    question: "If 'rosa' (rose) is feminine, what's the correct way to say 'small rose'?",
+    options: ["rosa parvus", "rosa parvum", "rosa parva", "parvus rosa"],
+    correctAnswer: 2,
+    explanation: "'Rosa parva' is correct! 'Rosa' is feminine, so we need the feminine form 'parva' to match."
+  },
+  {
+    id: "6C-4",
+    question: "Why can't we say 'templum bona'?",
+    options: ["Templum is too big for bona", "Templum is neuter but bona is feminine", "Bona doesn't mean good", "We can say it"],
+    correctAnswer: 1,
+    explanation: "The genders don't match! 'Templum' is neuter but 'bona' is feminine. We need 'templum bonum' instead."
+  },
+  {
+    id: "6C-5",
+    question: "In 'magister bonus' (good teacher), what shows this is correct Latin?",
+    options: ["Magister is always bonus", "Both words are masculine so they match", "Teachers are always good", "It's in the textbook"],
+    correctAnswer: 1,
+    explanation: "Both words are masculine! 'Magister' (teacher) is masculine and 'bonus' is the masculine form - perfect match!"
+  },
+  {
+    id: "6C-6",
+    question: "What's the most important rule about Latin adjectives?",
+    options: ["They're always last", "They always describe people", "They must agree with their noun's gender", "They're hard to spell"],
+    correctAnswer: 2,
+    explanation: "Adjectives must agree with their noun's gender! This is the golden rule - masculine with masculine, feminine with feminine, neuter with neuter."
+  }
+]
+
+// Combine all test levels into one array
+export const thema6Questions: Question[] = [
+  ...testA,
+  ...testB, 
+  ...testC
 ]

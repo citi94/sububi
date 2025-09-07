@@ -12,6 +12,11 @@ export interface Thema {
   description: string
   questions: Question[]
   icon: string
+  tests?: {
+    A: Question[]
+    B: Question[]
+    C: Question[]
+  }
 }
 
 // Enhanced Progress tracking with detailed metrics
