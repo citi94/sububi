@@ -17,37 +17,37 @@ export const thema8Questions: Question[] = [
   {
     id: "8A-2",
     question: "What ending tells you a verb is 2nd conjugation?",
-    options: ["-are", "-ere", "-ire", "-ure"],
-    correctAnswer: 1,
+    options: ["-are", "-ire", "-ure", "-ere"],
+    correctAnswer: 3,
     explanation: "2nd conjugation verbs end in -ere! Like 'videre' (to see), 'habere' (to have), 'docere' (to teach). The -ere ending is the clue!"
   },
   {
     id: "8A-3",
     question: "Which of these is a 1st conjugation verb?",
-    options: ["videre (to see)", "laborare (to work)", "habere (to have)", "docere (to teach)"],
-    correctAnswer: 1,
+    options: ["laborare (to work)", "videre (to see)", "habere (to have)", "docere (to teach)"],
+    correctAnswer: 0,
     explanation: "'Laborare' (to work) is 1st conjugation because it ends in -are! The other three end in -ere, making them 2nd conjugation verbs."
   },
   {
     id: "8A-4",
     question: "Complete: 'Marcus ___' (Marcus sees) - using the 2nd conjugation verb 'videre'",
-    options: ["videt", "vidat", "vidit", "videat"],
-    correctAnswer: 0,
+    options: ["vidat", "videt", "vidit", "videat"],
+    correctAnswer: 1,
     explanation: "'Marcus videt' means 'Marcus sees'! For 2nd conjugation verbs like 'videre', we use 'videt' with -t ending for 'he sees'."
   },
   {
     id: "8A-5",
     question: "Which verb means 'to have' and belongs to the 2nd conjugation?",
-    options: ["amare", "vocare", "habere", "cantare"],
-    correctAnswer: 2,
+    options: ["habere", "amare", "vocare", "cantare"],
+    correctAnswer: 0,
     explanation: "'Habere' means 'to have' and is 2nd conjugation (ends in -ere)! The others are all 1st conjugation verbs ending in -are."
   },
   {
     id: "8A-6",
-    question: "What's the main difference between 'amare' and 'videre'?",
-    options: ["One means love, one means see", "One ends in -are, one ends in -ere", "One is for boys, one is for girls", "Both A and B are correct"],
-    correctAnswer: 3,
-    explanation: "Both A and B are correct! 'Amare' means 'to love' and ends in -are (1st conjugation), while 'videre' means 'to see' and ends in -ere (2nd conjugation)."
+    question: "How can you tell 'amare' and 'videre' belong to different verb families?",
+    options: ["They have different meanings", "They have different endings (-are vs -ere)", "They use different pronouns", "They describe different genders"],
+    correctAnswer: 1,
+    explanation: "They have different endings! 'Amare' ends in -are (1st conjugation) while 'videre' ends in -ere (2nd conjugation). The ending tells us which verb family!"
   },
 
   // TEST B: REINFORCEMENT LEVEL (75% threshold) - Questions 8B-1 through 8B-6
@@ -88,10 +88,10 @@ export const thema8Questions: Question[] = [
   },
   {
     id: "8B-6",
-    question: "Which shows you can identify conjugations from conjugated forms?",
-    options: ["'Vocat' ends in -at, so it's 1st conjugation", "'Monet' ends in -et, so it's 2nd conjugation", "'Ambulant' ends in -ant, so it's 1st conjugation", "All of these patterns help identify conjugations"],
-    correctAnswer: 3,
-    explanation: "All patterns help! 1st conjugation shows -a- vowel ('vocat', 'ambulant'), 2nd conjugation shows -e- vowel ('monet', 'habent'). The theme vowel tells the story!"
+    question: "What do you notice about the theme vowels in 'vocat' vs 'monet'?",
+    options: ["'Vocat' has -a-, 'monet' has -e-", "Both use the same vowel", "'Vocat' has -e-, 'monet' has -a-", "Theme vowels don't matter"],
+    correctAnswer: 0,
+    explanation: "'Vocat' has -a-, 'monet' has -e-! This shows their conjugation families: 1st conjugation uses -a- vowel, 2nd conjugation uses -e- vowel. The theme vowel tells the story!"
   },
 
   // TEST C: MASTERY LEVEL (83% threshold) - Questions 8C-1 through 8C-6

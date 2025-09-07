@@ -5,44 +5,44 @@ const testA: Question[] = [
   {
     id: "6A-1",
     question: "What does the Latin adjective 'magnus' mean?",
-    options: ["small", "bad", "big/great", "good"],
-    correctAnswer: 2,
+    options: ["big/great", "small", "bad", "good"],
+    correctAnswer: 0,
     explanation: "'Magnus' means 'big' or 'great'! Like a magnificent castle or a great leader - something large and important."
   },
   {
     id: "6A-2", 
-    question: "In 'puella bona' (good girl), which word is the adjective?",
-    options: ["puella", "bona", "both words", "neither word"],
+    question: "In 'puella bona' (good girl), what does 'bona' do?",
+    options: ["names the girl", "describes the girl", "shows location", "indicates time"],
     correctAnswer: 1,
-    explanation: "'Bona' is the adjective! Adjectives describe nouns. 'Bona' describes what kind of girl - a good girl."
+    explanation: "'Bona' describes the girl! Adjectives tell us what nouns are like. 'Bona' tells us the girl is good."
   },
   {
     id: "6A-3",
     question: "What does 'parvus' mean?",
-    options: ["big", "small", "good", "bad"],
-    correctAnswer: 1,
+    options: ["small", "big", "good", "bad"],
+    correctAnswer: 0,
     explanation: "'Parvus' means 'small'! Think of a tiny puppy or a little coin - something not big."
   },
   {
     id: "6A-4",
-    question: "Which word describes 'templum' in 'templum magnum' (big temple)?",
-    options: ["templum", "magnum", "both equally", "it's unclear"],
+    question: "What makes 'magnum' different from 'templum' in 'templum magnum'?",
+    options: ["'Magnum' is longer", "'Magnum' describes, 'templum' names", "'Magnum' is harder to say", "'Magnum' comes second"],
     correctAnswer: 1,
-    explanation: "'Magnum' describes the temple! It tells us what kind of temple - a big temple, not a small one."
+    explanation: "'Magnum' describes while 'templum' names! 'Templum' names what we're talking about (a temple), 'magnum' describes what it's like (big)."
   },
   {
     id: "6A-5",
     question: "What does the adjective 'bonus' mean?",
-    options: ["big", "small", "good", "old"],
-    correctAnswer: 2,
+    options: ["big", "small", "old", "good"],
+    correctAnswer: 3,
     explanation: "'Bonus' means 'good'! Like a bonus point in games - something positive and nice."
   },
   {
     id: "6A-6",
-    question: "In Latin, adjectives are words that do what?",
-    options: ["name things", "describe things", "show actions", "connect ideas"],
-    correctAnswer: 1,
-    explanation: "Adjectives describe things! They tell us what nouns are like - big, small, good, bad, pretty, ugly."
+    question: "What do adjectives like 'magnus' and 'bonus' tell us about nouns?",
+    options: ["their location", "who owns them", "what they're like", "when they exist"],
+    correctAnswer: 2,
+    explanation: "Adjectives tell us what nouns are like! 'Magnus' tells us a temple is big, 'bonus' tells us a boy is good. They describe qualities!"
   }
 ]
 
@@ -71,10 +71,10 @@ const testB: Question[] = [
   },
   {
     id: "6B-4",
-    question: "What's wrong with 'puella magnus'?",
-    options: ["Nothing wrong", "Magnus is the wrong meaning", "Magnus is masculine but puella is feminine", "Should be magnum"],
-    correctAnswer: 2,
-    explanation: "The genders don't match! 'Puella' is feminine but 'magnus' is masculine. We need 'puella magna' instead."
+    question: "A student writes 'puella magnus'. What should the teacher correct?",
+    options: ["Change 'puella' to 'puer'", "Change 'magnus' to 'magna'", "Add more words", "Switch the word order"],
+    correctAnswer: 1,
+    explanation: "Change 'magnus' to 'magna'! In Latin, adjectives must match their nouns. 'Puella' is feminine, so we need the feminine form 'magna'."
   },
   {
     id: "6B-5", 

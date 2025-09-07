@@ -32,17 +32,17 @@ export const thema10Questions: Question[] = [
   },
   {
     id: "10A-4",
-    question: "Which English words often signal that Latin would use ablative case?",
-    options: ["the, a, an", "is, are, was", "with, by, in", "and, but, or"],
+    question: "In 'Marcus gladio pugnat' (Marcus fights with a sword), what case would 'gladio' be?",
+    options: ["Nominative", "Accusative", "Ablative", "Genitive"],
     correctAnswer: 2,
-    explanation: "'With', 'by', and 'in' often signal ablative case. These words show how something is done (with a tool), where it happens (in a place), or when it occurs."
+    explanation: "'Gladio' is ablative case! It shows HOW Marcus fights - with a sword. Ablative tells us the means or way of doing something."
   },
   {
     id: "10A-5",
-    question: "In 'Puer in horto ludit' (The boy plays in the garden), where does he play?",
-    options: ["in the house", "in the garden", "in the school", "in the street"],
+    question: "In 'Puer in horto ludit', what does the phrase 'in horto' tell us?",
+    options: ["when the boy plays", "where the boy plays", "how the boy plays", "why the boy plays"],
     correctAnswer: 1,
-    explanation: "He plays in the garden! 'In horto' means 'in the garden', and 'horto' is ablative case showing WHERE the playing happens. Ablative answers 'where?'"
+    explanation: "'In horto' tells us WHERE the boy plays! 'Horto' is ablative case showing the location. Ablative answers 'where?' along with 'how?' and 'when?'"
   },
   {
     id: "10A-6",

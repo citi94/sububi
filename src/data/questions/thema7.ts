@@ -9,10 +9,10 @@ export const thema7Questions: Question[] = [
   // TEST A: INTRODUCTION LEVEL (67% threshold) - Questions 7A-1 through 7A-6
   {
     id: "7A-1",
-    question: "In the phrase 'liber puellae' (the girl's book), whose book is it?",
-    options: ["the boy's book", "the teacher's book", "the girl's book", "my book"],
+    question: "In the phrase 'liber puellae', what does 'puellae' tell us about the book?",
+    options: ["The book is big", "The book is old", "The book belongs to the girl", "The book is on the table"],
     correctAnswer: 2,
-    explanation: "It's the girl's book! 'Puellae' shows possession - it tells us the book belongs to the girl. This is called the genitive case, and it's like adding 's in English!"
+    explanation: "The book belongs to the girl! 'Puellae' shows possession - it tells us the book belongs to the girl. This is called the genitive case, and it's like adding 's in English!"
   },
   {
     id: "7A-2",
@@ -88,10 +88,10 @@ export const thema7Questions: Question[] = [
   },
   {
     id: "7B-6",
-    question: "Why do we use 'magistri' instead of 'magister' in 'domus magistri'?",
-    options: ["Because it sounds better", "To show the house belongs to the teacher", "Because 'magister' is wrong", "To make it plural"],
+    question: "What case is 'magistri' in the phrase 'liber magistri'?",
+    options: ["Nominative", "Genitive", "Accusative", "Dative"],
     correctAnswer: 1,
-    explanation: "We use 'magistri' to show the house belongs to the teacher! 'Magistri' is the genitive case of 'magister', showing possession. It's not about plural - it's about ownership!"
+    explanation: "'Magistri' is genitive case! The -i ending shows this is the possessive form of 'magister' (teacher). Genitive case tells us whose book it is."
   },
 
   // TEST C: MASTERY LEVEL (83% threshold) - Questions 7C-1 through 7C-6
