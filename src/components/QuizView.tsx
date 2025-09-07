@@ -16,11 +16,21 @@ export default function QuizView({ thema, onBack, gameMechanics }: QuizViewProps
   const [questionStartTime, setQuestionStartTime] = useState(Date.now())
   const [showCelebration, setShowCelebration] = useState(false)
   
-  // Initialize quiz session
+  // Always use Test A questions for now
+  const currentTestLevel = 'A'
+  const questions = thema.tests?.[currentTestLevel] || thema.questions || []
+  
+  // Initialize quiz session - always start with Test A for now
   useEffect(() => {
-    gameMechanics.startQuizSession(thema.id)
-    setQuestionStartTime(Date.now())
-  }, [thema.id])
+    try {
+      gameMechanics.startQuizSession(thema.id, currentTestLevel)
+      setQuestionStartTime(Date.now())
+    } catch (error) {
+      console.error('Error starting quiz session:', error)
+      // If there's an error, go back to the menu
+      onBack()
+    }
+  }, [thema.id, currentTestLevel])
   
   // Reset question timer when moving to next question
   useEffect(() => {
@@ -34,7 +44,7 @@ export default function QuizView({ thema, onBack, gameMechanics }: QuizViewProps
   const handleNext = () => {
     if (selectedAnswer === null) return
 
-    const question = thema.questions[currentQuestion]
+    const question = questions[currentQuestion]
     const isCorrect = selectedAnswer === question.correctAnswer
     const timeSpent = Date.now() - questionStartTime
     
@@ -55,7 +65,7 @@ export default function QuizView({ thema, onBack, gameMechanics }: QuizViewProps
     }
 
     setTimeout(() => {
-      if (currentQuestion < thema.questions.length - 1) {
+      if (currentQuestion < questions.length - 1) {
         setCurrentQuestion(currentQuestion + 1)
         setSelectedAnswer(null)
         setShowResult(false)
@@ -154,7 +164,7 @@ export default function QuizView({ thema, onBack, gameMechanics }: QuizViewProps
         <h2>{thema.title}</h2>
         <div className="stats-display">
           <div className="progress">
-            {currentQuestion + 1} of {thema.questions.length}
+            {currentQuestion + 1} of {questions.length}
           </div>
           <div className="score">Score: {gameMechanics.currentSession?.totalScore || 0}</div>
           <div className="streak">🔥 {gameMechanics.currentSession?.streak || 0}</div>
@@ -202,7 +212,7 @@ export default function QuizView({ thema, onBack, gameMechanics }: QuizViewProps
             onClick={handleNext}
             disabled={selectedAnswer === null}
           >
-            {currentQuestion === thema.questions.length - 1 ? 'Finish' : 'Next'}
+            {currentQuestion === questions.length - 1 ? 'Finish' : 'Next'}
           </button>
         )}
 
