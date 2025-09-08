@@ -212,7 +212,7 @@ export const useGameMechanics = () => {
 
   const createDefaultGameProgress = (themaId: number): GameProgress => ({
     themaId,
-    unlocked: themaId === 1, // Only first thema unlocked initially
+    unlocked: true, // All Themas unlocked for Test A access
     testA: createDefaultTestProgress('A'),
     testB: createDefaultTestProgress('B'),
     testC: createDefaultTestProgress('C'),
@@ -413,14 +413,11 @@ export const useGameMechanics = () => {
   const isTestUnlocked = (themaId: number, testLevel: 'A' | 'B' | 'C'): boolean => {
     const themaProgress = progress[themaId]
     
-    // Thema 1 Test A is always unlocked
-    if (themaId === 1 && testLevel === 'A') return true
-    
-    // For other themas, must unlock thema first
-    if (!themaProgress?.unlocked) return false
-    
-    // Test A is unlocked when thema is unlocked
+    // Test A is always unlocked for all Themas (1-10) - introduction level
     if (testLevel === 'A') return true
+    
+    // For Tests B and C, need thema progress and previous test completion
+    if (!themaProgress) return false
     
     // Test B requires Test A to be passed
     if (testLevel === 'B') return themaProgress.testA.passed
