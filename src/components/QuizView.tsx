@@ -18,7 +18,22 @@ export default function QuizView({ thema, onBack, gameMechanics }: QuizViewProps
   
   // Always use Test A questions for now
   const currentTestLevel = 'A'
-  const questions = thema.tests?.[currentTestLevel] || thema.questions || []
+  const rawQuestions = thema.tests?.[currentTestLevel] || thema.questions || []
+  
+  // Validate question structure to prevent crashes
+  const validateQuestion = (question: any): boolean => {
+    return question &&
+      typeof question === 'object' &&
+      typeof question.id === 'string' &&
+      typeof question.question === 'string' &&
+      Array.isArray(question.options) &&
+      question.options.length > 0 &&
+      typeof question.correctAnswer === 'number' &&
+      question.correctAnswer >= 0 &&
+      question.correctAnswer < question.options.length
+  }
+  
+  const questions = rawQuestions.filter(validateQuestion)
   
   // Initialize quiz session - always start with Test A for now
   useEffect(() => {
@@ -78,8 +93,83 @@ export default function QuizView({ thema, onBack, gameMechanics }: QuizViewProps
     }, 2000)
   }
 
-  const question = thema.questions[currentQuestion]
+  const question = questions[currentQuestion]
 
+  // Show error if no valid questions found
+  if (questions.length === 0) {
+    return (
+      <div className="quiz-view">
+        <div className="quiz-header">
+          <button onClick={onBack} className="back-btn">
+            <ArrowLeft size={20} />
+            Back
+          </button>
+          <h2>{thema.title}</h2>
+        </div>
+        <div className="no-questions">
+          <h3>Questions Not Available</h3>
+          <p>The questions for this topic need to be reviewed. Please try another topic!</p>
+        </div>
+        
+        <style jsx>{`
+          .quiz-view {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+          }
+
+          .quiz-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+          }
+
+          .back-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            padding: 0.75rem;
+            border-radius: 12px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.2s;
+          }
+
+          .back-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+          }
+
+          .quiz-header h2 {
+            color: white;
+            margin: 0;
+          }
+
+          .no-questions {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+          }
+
+          .no-questions h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+
+          .no-questions p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+          }
+        `}</style>
+      </div>
+    )
+  }
+  
   if (!question) {
     return (
       <div className="quiz-view">

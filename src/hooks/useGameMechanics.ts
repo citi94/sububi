@@ -73,7 +73,7 @@ export const useGameMechanics = () => {
           const legacy = oldData as any
           migrated[id] = {
             themaId: id,
-            unlocked: legacy.completed || id === 1, // Unlock if was completed, or if Thema 1
+            unlocked: true, // All Themas unlocked for Test A access
             testA: {
               testLevel: 'A' as const,
               completed: legacy.completed || false,
@@ -97,9 +97,11 @@ export const useGameMechanics = () => {
       }
     }
     
-    // Ensure Thema 1 is always unlocked
-    if (!migrated[1]) {
-      migrated[1] = createDefaultGameProgress(1)
+    // Ensure all Themas are unlocked for Test A access
+    for (let i = 1; i <= 10; i++) {
+      if (!migrated[i]) {
+        migrated[i] = createDefaultGameProgress(i)
+      }
     }
     
     return migrated
@@ -123,9 +125,12 @@ export const useGameMechanics = () => {
         setProgress(initialProgress)
       }
     } else {
-      // Initialize with Thema 1 unlocked
-      const initialProgress = {
-        1: createDefaultGameProgress(1)
+      // Initialize with all Themas unlocked for Test A access
+      const initialProgress: Record<number, GameProgress> = {}
+      for (let i = 1; i <= 10; i++) {
+        const themaProgress = createDefaultGameProgress(i)
+        themaProgress.unlocked = true // All Themas unlocked for Test A
+        initialProgress[i] = themaProgress
       }
       setProgress(initialProgress)
     }
@@ -330,7 +335,8 @@ export const useGameMechanics = () => {
       }
       
       // Update overall completion status
-      updatedProgress.overallCompleted = updatedProgress.testA.passed && updatedProgress.testB.passed
+      // For now, since only Test A is active, mark as completed when Test A is passed
+      updatedProgress.overallCompleted = updatedProgress.testA.passed
       updatedProgress.fullyMastered = updatedProgress.testA.passed && updatedProgress.testB.passed && updatedProgress.testC.passed
       
       if (updatedProgress.fullyMastered && !existing.fullyMasteredAt) {
@@ -377,7 +383,7 @@ export const useGameMechanics = () => {
         }
       }
       
-      const themesCompleted = Object.values(updatedProgress).filter(p => p.testA?.passed && p.testB?.passed).length
+      const themesCompleted = Object.values(updatedProgress).filter(p => p.testA?.passed).length
       const themesFullyMastered = Object.values(updatedProgress).filter(p => p.testA?.passed && p.testB?.passed && p.testC?.passed).length
       
       return {
@@ -435,8 +441,8 @@ export const useGameMechanics = () => {
       const updated = { ...prev }
       const currentThema = updated[themaId]
       
-      // If completed A+B, unlock next thema
-      if (currentThema && currentThema.testA.passed && currentThema.testB.passed) {
+      // If completed Test A (since only Test A is currently active), unlock next thema
+      if (currentThema && currentThema.testA.passed) {
         const nextThemaId = themaId + 1
         if (nextThemaId <= 10 && !updated[nextThemaId]?.unlocked) {
           if (!updated[nextThemaId]) {
@@ -497,7 +503,7 @@ export const useGameMechanics = () => {
             unlocked = newProgress >= 5
             break
           case 'latin_champion':
-            const themesCompleted = Object.values(progress).filter(p => p.overallCompleted).length
+            const themesCompleted = Object.values(progress).filter(p => p.testA?.passed).length
             newProgress = Math.min(themesCompleted, 10)
             unlocked = newProgress >= 10
             break
@@ -602,9 +608,10 @@ export const useGameMechanics = () => {
   ]
 
   const resetProgress = () => {
-    // Initialize with Thema 1 unlocked
-    const initialProgress = {
-      1: createDefaultGameProgress(1)
+    // Initialize with all Themas unlocked for Test A access
+    const initialProgress: Record<number, GameProgress> = {}
+    for (let i = 1; i <= 10; i++) {
+      initialProgress[i] = createDefaultGameProgress(i)
     }
     
     setProgress(initialProgress)
